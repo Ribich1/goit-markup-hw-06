@@ -569,10 +569,25 @@ img {
 }
 
 .subscribe-btn {
+  display: flex;
+
   width: 165px;
   height: 40px;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
+  border-radius: 4px;
+  border: none;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-icon {
+  display: block;
+  fill: var(--bg-cl-light);
+  margin-left: 16px;
 }
 .subscribe-form {
   display: flex;
